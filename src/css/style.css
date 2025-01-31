@@ -94,6 +94,7 @@ table th {
     font-weight: lighter;
     text-align: left;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 table tr {
