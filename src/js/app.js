@@ -5,6 +5,8 @@ let courses = [];
 window.onload = () => {
     fetchCourses();
 
+    /* add event listener for search bar functionality */
+    document.querySelector("#search").addEventListener("input", filterCourses);
     /* add event listeners on th-headings to sort on click */
     document.querySelector("#th-code").addEventListener("click", sortCode);
     document.querySelector("#th-name").addEventListener("click", sortName);
@@ -37,6 +39,19 @@ function displayCourses(courses) {
         rowEl.innerHTML = `<td>${course.code}</td><td>${course.coursename}</td><td>${course.progression}</td>`
         tbodyEl.appendChild(rowEl);
     });
+}
+
+/* function to filter courses for search functionality */
+function filterCourses() {
+    const userSearch = document.querySelector("#search").value;
+
+    const filteredCourses = courses.filter(course =>
+        course.code.toLowerCase().includes(userSearch.toLowerCase()) || 
+        course.coursename.toLowerCase().includes(userSearch.toLowerCase()) ||
+        course.progression.toLowerCase().includes(userSearch.toLowerCase())
+    );
+
+    displayCourses(filteredCourses);
 }
 
 /* function to sort course code column */
