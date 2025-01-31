@@ -82,6 +82,18 @@ footer p {
     border-radius: 5px;
 }
 
+table {
+    border: 2px solid red;
+    width: 90%;
+    margin: 1em auto;
+}
+
+table th {
+    font-weight: lighter;
+    text-align: left;
+    text-decoration: underline;
+}
+
 /* media query for screens larger than 1600px */
 @media (min-width: 1600px) {
     main table {
