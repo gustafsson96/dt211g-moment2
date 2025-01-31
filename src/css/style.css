@@ -57,73 +57,14 @@ footer p {
     text-align: center;
 }
 
-/* styling for index.html and arbete.html */
-.about,
-.development {
-    background-color: pink;
-    margin: 3em auto;
-    padding: 1em 2em;
-    border-radius: 25px;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    max-width: 50%;
-}
+/* styling for index.html  */
 
-.about h1,
-.development h1 {
-    font-size: 3em;
-    text-align: center;
-    padding: 0;
-    margin: 0.5em 0.5em 1em;
-}
 
-.development h2 {
-   line-height: 0.5;
-}
-
-.about p,
-.about ul,
-.development p,
-.development ul {
-    font-size: 1.1em;
-    line-height: 1.7;
-    margin-bottom: 2.2em;
-    
-}
-
-.about ul li,
-.development ul li {
-    margin: 1em;
-}
-
-/* styling for bilder.html */
-.picture-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5em;
-}
-
-.picture-container img {
-    width: 100%;
-    height: auto;
-}
 
 /* media query for screens larger than 1600px */
 @media (min-width: 1600px) {
     .about {
         max-width: 1000px;
-    }
-}
-
-/* media query for screens smaller than 1000 px */
-@media (max-width: 1000px) {
-
-    .about,
-    .development {
-        max-width: 65%;
-    }
-
-    .picture-container {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -201,31 +142,4 @@ footer p {
         border-bottom: none;
     }
 
-    .about,
-    .development {
-        max-width: 100%;
-        width: 97%;
-        border-radius: 0;
-        margin: 0 auto;
-        padding: 0.5em;
-    }
-
-    .about h1,
-    .development h1 {
-        font-size: 2.3em;
-    }
-
-    .development h2 {
-        font-size: 1.3em;
-    }
-
-    .about p, 
-    .development p {
-        font-size: 1em;
-    }
-
-    .picture-container {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
 }
