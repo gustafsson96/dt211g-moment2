@@ -73,25 +73,41 @@ footer p {
 .search-container label {
     font-weight: bold;
     margin-bottom: 0.5em;
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
 
 .search-container input {
-    padding: 0.4em;
+    padding: 1em;
     border: 1px solid lightgrey;
     border-radius: 5px;
 }
 
 table {
-    border: 2px solid red;
     width: 90%;
     margin: 1em auto;
+    padding: 1em;
+    font-size: 1.2em;
+    border-collapse: collapse
 }
 
 table th {
     font-weight: lighter;
     text-align: left;
     text-decoration: underline;
+}
+
+table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table tr th,
+table tr td {
+    padding: 1em;
+}
+
+table th:last-child,
+table td:last-child {
+    text-align: center;
 }
 
 /* media query for screens larger than 1600px */

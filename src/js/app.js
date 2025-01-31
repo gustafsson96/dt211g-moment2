@@ -29,6 +29,7 @@ function displayCourses(courses) {
 
         rowEl.innerHTML = `<td>${course.code}</td><td>${course.coursename}</td><td>${course.progression}</td>`
         
+
         tbodyEl.appendChild(rowEl);
     });
 }
