@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 0.7em;
     border-bottom: 2px solid black;
     font-family: "Rubik", 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -36,7 +37,6 @@ footer {
     line-height: 1.6;
     bottom: 0;
     margin-top: auto;
-
 }
 
 footer p {
