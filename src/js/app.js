@@ -1,5 +1,6 @@
 "use strict";
 
+/* empty array to store courses */
 let courses = [];
 
 window.onload = () => {
